@@ -10,7 +10,7 @@ body{
     background: #e6e6e6;
 }
 
-/****Layout****/
+/* ***Layout*** */
 
 #cabecalho{
     background: #f7b600;
@@ -35,20 +35,29 @@ body{
 
 #conteudos{
     width: 660px;
-    background: orange;
     float: left;   
 }
 
 .postagem{
-padding: 10px;
-margin-bottom: 10px;
+margin: 5PX;
+padding: 10PX;
 background: white;
 }
 
 #barra-lateral{
     width: 240px;
-    background: orange;
+    background: #f7b600;
     float: right;
+}
+
+.conteudo-lateral{
+
+}
+
+.postagem-lateral{
+    color: #FFF;
+    background: f7b600;
+    margin: 10px;
 }
 
 #rodape{
@@ -59,7 +68,7 @@ background: white;
 }
 
 
-/****Formatações gerais****/
+/* ****Formatações gerais**** */
 .branco{
     color: white ;
 }
@@ -68,8 +77,18 @@ background: white;
     padding-top: 5px;
     font-size: 0.8em;
     color: #888484;
-    text-decoration: underline;
+    text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    
+}
+#sugestoes{
+    padding: 15px;
+    margin: 15px;
+    font-size: 0.5em;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 .data-post{
@@ -89,21 +108,59 @@ h2{
     color: #f7b600;
 }
 
-/****Formatações do menu****/
 
-a:link, a:visited{
-    color: #FFF;
+h4{
+    text-align: center;
 }
 
-a:hover{
-    padding: 8px 5px;
-    color: #f7b600;
-    background: #FFF;
-}
-a:placeholder{
-    color: black;
+h5{
+    color: gray;
+    font-size: 1em;
+    text-align: center;
+
 }
 
-a{
+
+/* Estilo para os links gerais */
+a:link, a:visited {
+    color: #f7b600 !important;
     text-decoration: none;
 }
+
+a:hover {
+    color: #f7b600 !important;
+    background: #fff !important;
+    text-decoration: underline !important;
+}
+
+/* Estilo específico para os links do cabeçalho */
+#cabecalho a:link, #cabecalho a:visited {
+    color: #fff !important;
+    background: #f7b600 !important;
+    text-decoration: none;
+}
+
+#cabecalho a:hover {
+    padding: 8px 5px !important;
+    color: #f7b600 !important;
+    background: #FFF !important;
+    text-decoration: none !important; /* Mantém sem sublinhado ao passar o mouse */
+}
+
+
+#sugestoes a:link, #sugestoes a:visited {
+    color: #fff !important;
+    background: #f7b600 !important;
+    text-decoration: none;
+}
+
+#sugestoes a:hover {
+    padding: 8px 5px !important;
+    color: #f7b600 !important;
+    background: #FFF !important;
+    text-decoration: none !important; /* Mantém sem sublinhado ao passar o mouse */
+}
+
+
+
+
